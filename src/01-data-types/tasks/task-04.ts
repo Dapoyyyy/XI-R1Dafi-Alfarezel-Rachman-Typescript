@@ -10,3 +10,46 @@
  * 
  * display the book data using console.log.
  */
+
+
+type Book = {
+  isbn: string;
+  title: string;
+  author: string;
+  totalPages: number;
+  category: string;
+  isAvailable: boolean;
+};
+
+const book1: Book = {
+  isbn: "9786020324781",
+  title: "Laskar Pelangi",
+  author: "Andrea Hirata",
+  totalPages: 529,
+  category: "Novel",
+  isAvailable: true,
+};
+
+const book2: Book = {
+  isbn: "9789793062792",
+  title: "Bumi",
+  author: "Tere Liye",
+  totalPages: 440,
+  category: "Fantasy",
+  isAvailable: true,
+};
+
+const book3: Book = {
+  isbn: "9786022912825",
+  title: "Negeri 5 Menara",
+  author: "Ahmad Fuadi",
+  totalPages: 424,
+  category: "Novel",
+  isAvailable: false,
+};
+
+console.log(book1);
+console.log(book2);
+console.log(book3);
+
+

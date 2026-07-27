@@ -12,5 +12,24 @@
  * 1. dentify all values that should be stored as variables.
  * 2. Determine the most appropriate data type for each variable.
  * 3. Create the variable declarations using TypeScript.
- * 4. Display the student data using console.log.
+ * 4. Display the student data using conpx tsx src/01-data-types/examples/basic-types.tsnsole.log.
  */
+
+const studentId: string = "ST2026045";
+const studentName: string = "Nadia Putri";
+const assignmentScore: number = 88.5;
+const midtermScore: number = 84;
+const finalExamScore: number = 91.5;
+const attendanceScore: number = 100;
+const participatesInExtracurricular: boolean = true;
+
+console.log("Student ID:", studentId);
+console.log("Student Name:", studentName);
+console.log("Assignment Score:", assignmentScore);
+console.log("Midterm Score:", midtermScore);
+console.log("Final Exam Score:", finalExamScore);
+console.log("Attendance Score:", attendanceScore);
+console.log(
+  "Participates in Extracurricular Activities:",
+  participatesInExtracurricular
+);
