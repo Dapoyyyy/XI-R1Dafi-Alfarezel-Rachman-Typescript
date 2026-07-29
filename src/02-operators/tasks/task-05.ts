@@ -33,3 +33,4 @@
  * - Calculate the remaining scholarship budget.
  * - Display whether the student is accepted.
  */
+

@@ -22,3 +22,11 @@
  *  - Calculate the final payment.
 
  */
+
+const MechanicalKeyboard : number =  850000;
+const  WirelessMouse   : number = 275000 ;
+const MousePad  : number =  120000;
+const MechanicalKeyboardQuantity: number= 1;
+const WirelessMouseQuantity: number= 2;
+const MousePadQuantity: number= 1;
+const  Discount : number =1000000;

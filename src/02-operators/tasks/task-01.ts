@@ -14,3 +14,18 @@
  *  - Final payment
  * 2. Display the calculation results.
  */
+
+const FriedRicePrice : number= 18000;
+const MineralWaterPrice: number= 5000;
+const FriedRiceQuantity: number= 3;
+const MineralWaterQuantity :number=2;
+const discount : number = 10000;
+
+console.log("total food price:",FriedRicePrice * FriedRiceQuantity);
+console.log("total drink price:",MineralWaterPrice * MineralWaterQuantity);
+console.log("GrandTotal:",(FriedRicePrice*FriedRiceQuantity) + (MineralWaterPrice * MineralWaterQuantity));
+console.log("GrandTotal:",(FriedRicePrice*FriedRiceQuantity) + (MineralWaterPrice * MineralWaterQuantity)-(discount));
+
+
+
+
