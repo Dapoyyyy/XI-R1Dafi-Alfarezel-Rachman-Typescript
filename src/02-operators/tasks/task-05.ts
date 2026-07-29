@@ -34,3 +34,10 @@
  * - Display whether the student is accepted.
  */
 
+const StudentName : String = "Alya Putri";
+const GPA : Number = 3.89;
+const FamilyIncome : Number =  4200000;
+ const CompetitionCount : Number = 4;
+ const HasDisciplinaryRecord : boolean = false;
+ const DocumentsComplete  : boolean = true;
+ 

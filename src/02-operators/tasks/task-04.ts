@@ -23,10 +23,24 @@
 
  */
 
-const MechanicalKeyboard : number =  850000;
-const  WirelessMouse   : number = 275000 ;
-const MousePad  : number =  120000;
-const MechanicalKeyboardQuantity: number= 1;
-const WirelessMouseQuantity: number= 2;
-const MousePadQuantity: number= 1;
-const  Discount : number =1000000;
+const Mechanicalkeyboardprice: number = 850000;
+const MechanicalkeyboardQuantity: number = 1;
+const WirelessmousePrice: number = 275000
+const WirelessmouseQuantity: number = 2;
+const MousepadPrice: number = 120000;
+const discount: number =10;
+const premiummember:  boolean = true;
+const totalItem: number = MechanicalkeyboardQuantity + WirelessmouseQuantity + 1;
+const subtotal: number = (Mechanicalkeyboardprice * MechanicalkeyboardQuantity) + (WirelessmousePrice * WirelessmouseQuantity) + (MousepadPrice * 1);
+const discountAmount: number = subtotal > 1000000 ? subtotal * (discount / 100) : 0;
+const shippingCost: number = premiummember ? 0 : 50000;
+const finalPayment: number = subtotal - discountAmount + shippingCost;
+
+
+console.log("==Shopping Cart Summary==");
+console.log("Subtotal :", subtotal);
+console.log("Discount Amount :", discountAmount);
+console.log("Shipping Cost :", shippingCost);
+console.log("Total Items Purchased :", totalItem);
+console.log("Final Payment :", finalPayment);
+console.log("Is Premium Member :", premiummember);
