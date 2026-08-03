@@ -18,3 +18,26 @@
  * 2. Implement the business rules using if...else if...else.
  * 3. Display the recommended package.
  */
+
+console.log("==Internet Package Recommendation==");
+
+const CustomerName: string = "Raka Saputra";
+const MonthlyUsage: number = 124;
+let RecommendedPackage: string;
+
+if (MonthlyUsage < 50) {
+    RecommendedPackage = "Basic";
+}
+
+else if (MonthlyUsage >= 50 && MonthlyUsage <= 150) {
+    RecommendedPackage = "Standard";
+}
+
+else {
+    RecommendedPackage = "Premium";
+}
+
+console.log("Customer Name:", CustomerName);
+console.log("Monthly Usage:", MonthlyUsage, "GB");
+console.log("Recommended Package:", RecommendedPackage);
+

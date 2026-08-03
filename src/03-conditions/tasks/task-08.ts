@@ -27,3 +27,8 @@
  * 2. Implement the airline decision process.
  * 3. Display the correct message.
  */
+
+const Passenger: string = "Fajar Nugroho";
+const OnlineCheckIn: boolean = true;
+const CabinClass: string = "Economy";
+const BaggageWeight: number = 24;

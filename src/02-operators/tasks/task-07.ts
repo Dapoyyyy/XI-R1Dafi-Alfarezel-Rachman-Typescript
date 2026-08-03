@@ -21,3 +21,24 @@
  * - Final payment
  * - Whether the guest is eligible for free breakfast
  */
+
+const RoomPricePerNight: number = 650000;
+const NightsStayed: number = 4;
+const ServiceCharge: number = 120000;
+const TaxRate: number = 0.11;
+const IsVIPMember: boolean = true;
+
+const RoomSubtotal: number = RoomPricePerNight * NightsStayed;
+
+const Discount: number = IsVIPMember ? RoomSubtotal * 0.12 : 0;
+const Tax: number = (RoomSubtotal - Discount) * TaxRate;
+
+const FinalPayment: number = RoomSubtotal - Discount + Tax + ServiceCharge;
+const IsEligibleForFreeBreakfast: boolean = NightsStayed >= 3 || IsVIPMember;
+
+console.log("Room Subtotal:", RoomSubtotal);
+console.log("Discount:", Discount);
+console.log("Tax:", Tax);
+console.log("Final Payment:", FinalPayment);
+console.log("Is Eligible for Free Breakfast:", IsEligibleForFreeBreakfast);
+

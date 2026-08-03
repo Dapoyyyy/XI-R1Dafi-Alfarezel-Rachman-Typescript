@@ -15,9 +15,11 @@
 
  */
 
-const FinalScore : number= 82;
-const Attendance : number= 94;
-const TuitionPaid : Boolean= true;  
-const isEligible: Boolean = FinalScore >= 75 && Attendance  >= 90  &&  TuitionPaid;
+const finalScore: number = 82;
+const attendance: number = 94;
+const tuitionPaid: boolean = true;  
 
-console.log("whether the student passed ? " , isEligible);
+const isEligible: boolean = finalScore >= 75 && attendance >= 90 && tuitionPaid;
+
+console.log("Is the student eligible for graduation ceremony?", isEligible);
+

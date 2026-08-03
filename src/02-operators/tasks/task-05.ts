@@ -34,10 +34,24 @@
  * - Display whether the student is accepted.
  */
 
-const StudentName : String = "Alya Putri";
-const GPA : Number = 3.89;
-const FamilyIncome : Number =  4200000;
- const CompetitionCount : Number = 4;
- const HasDisciplinaryRecord : boolean = false;
- const DocumentsComplete  : boolean = true;
- 
+const StudentName: string = "Alya Putri";
+const GPA: number = 3.89;
+const FamilyIncome: number = 4200000;
+const CompetitionCount: number = 4;
+const HasDisciplinaryRecord: boolean = false;
+const DocumentsComplete: boolean = true;
+
+const ScholarshipAmount: number = (GPA >= 3.75 && FamilyIncome < 5000000 && CompetitionCount >= 3 && !HasDisciplinaryRecord && DocumentsComplete) ? 12000000 : 0;
+const TotalScholarshipBudget: number = 500000000;
+const RemainingScholarshipBudget: number = TotalScholarshipBudget - ScholarshipAmount;
+
+console.log("Student Name:", StudentName);
+console.log("GPA:", GPA);
+console.log("Family Income:", FamilyIncome);
+console.log("Competition Count:", CompetitionCount);
+console.log("Has Disciplinary Record:", HasDisciplinaryRecord);
+console.log("Documents Complete:", DocumentsComplete);
+console.log("Scholarship Amount:", ScholarshipAmount);
+console.log("Remaining Scholarship Budget:", RemainingScholarshipBudget);
+
+
