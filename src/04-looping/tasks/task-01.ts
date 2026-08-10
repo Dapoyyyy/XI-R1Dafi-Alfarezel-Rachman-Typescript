@@ -16,12 +16,8 @@
 
  */
 
-console.log("==Attendance Verification=="); 
 
-for (let i: number = 1; i <= 30; i++) {
-    console.log("Checking attendance for Student #" + i);
+console.log("=== for loop ===");
+for (let i = 1; i <= 30; i++) {
+  console.log(`Checking attendance for Student : ${i}`);
 }
-
-console.log("Attendance verification completed."); 
-
-
